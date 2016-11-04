@@ -17,12 +17,7 @@ io.on('connection', function(socket){
   });
 });
 
-/*io.on("connection", function (socket) {
-    var clientIp = socket.request.connection.remoteAddress;
-	clientIp = clientIp.replace(/^.*:/, '');
-    console.log('eventName',{ip : clientIp}); //emit it back to client
-});*/
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(666, function(){
+  console.log('listening on <ip>:666');
 });
