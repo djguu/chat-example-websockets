@@ -7,6 +7,11 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+
+app.get('/admin/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
+
 io.on('connection', function(socket){
   var clientIp = socket.request.connection.remoteAddress;
         clientIp = clientIp.replace(/^.*:/, '');
