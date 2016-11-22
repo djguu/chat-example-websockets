@@ -45,8 +45,8 @@ io.on('connection', function(socket){
   	});
 });
 
-http.listen(80);
+//http.listen(80);
 
-/*http.listen(666, function(){
-  console.log('listening on <ip>:666');
-});*/
+http.listen(666, function(){
+    console.log('listening on <ip>:666');
+});

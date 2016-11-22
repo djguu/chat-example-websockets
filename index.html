@@ -71,7 +71,7 @@
             socket.on('usernames', function(data){
                 var html = '';
                 for(i=0; i < data.length; i++){
-                    html += '<img src="images/on.png" alt="icon" style="width:10px;height:10px;">&nbsp; ' + data[i] + '<br>'
+                    html += '<img src="/images/on.png" alt="icon" style="width:10px;height:10px;">&nbsp; ' + data[i] + '<br>'
                 }
                 $('#users').html(html);
             })
