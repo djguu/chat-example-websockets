@@ -12,7 +12,7 @@ app.get('/', function(req, res){
 
 
 io.on('connection', function(socket){
-
+	
 	function updateNicknames(){
 		io.emit('usernames', nicknames);
 	};
